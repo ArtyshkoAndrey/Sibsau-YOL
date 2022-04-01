@@ -1,0 +1,33 @@
+@import "components/UserMenu";
+@import "pages/index";
+
+// pushing footer to bottom
+#_layout, #_nuxt {
+  height: 100%;
+}
+
+// Nuxt Content
+.nuxt-content h2{
+  margin-top: 1.5em;
+}
+.nuxt-content pre{
+  border-radius: .25rem;
+}
+
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+#wrapper-page {
+  margin-top: 138px;
+  margin-bottom: 50px;
+  @include media-breakpoint-down(lg) {
+    margin-top: 61px;
+  }
+}

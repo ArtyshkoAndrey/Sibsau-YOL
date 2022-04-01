@@ -1,0 +1,50 @@
+nav.navbar {
+  z-index: 100;
+  form {
+    position: relative;
+
+    input {
+      height: 30px;
+
+      &::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+      }
+    }
+
+    button {
+      top: 0;
+      right: 10px;
+      height: 30px;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
+  .logo {
+    height: 100px;
+  }
+  @include media-breakpoint-down(lg) {
+    .logo {
+      height: auto;
+    }
+  }
+  .nav-item.dropdown {
+    .dropdown-menu {
+      margin-top: 7px;
+      left: 100%;
+      transform: translateX(-85%);
+      border-radius: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      .dropdown-item {
+        transition: background-color .3s;
+      }
+    }
+  }
+  #second-ul {
+    font-size: 14px;
+  }
+}
+
+
+

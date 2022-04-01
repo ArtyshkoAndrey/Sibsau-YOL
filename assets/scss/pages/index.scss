@@ -1,0 +1,106 @@
+@import "../custom";
+
+#index-slider {
+
+  .col-slider {
+    margin: 0;
+    padding: 0;
+  }
+
+  #carousel {
+    width: 100%;
+    height: 662px;
+
+    @include media-breakpoint-down(lg) {
+      height: 500px;
+    }
+
+    @include media-breakpoint-down(md) {
+      height: 400px;
+    }
+
+    .carousel-inner {
+      height: 662px;
+
+      @include media-breakpoint-down(lg) {
+        height: 500px;
+      }
+
+      @include media-breakpoint-down(md) {
+        height: 400px;
+      }
+
+      .carousel-item {
+
+        img  {
+          height: 662px;
+          object-fit: cover;
+          filter: brightness(40%);
+
+          @include media-breakpoint-down(lg) {
+            height: 500px;
+          }
+
+          @include media-breakpoint-down(md) {
+            height: 400px;
+          }
+        }
+
+        .carousel-caption {
+          text-align: left;
+          width: 100%;
+          left: 0;
+          bottom: unset;
+          top: 50%;
+          transform: translateY(-50%);
+
+          span {
+            color: $sibgu-white !important;
+            font-weight: bold;
+            font-size: 4rem;
+            text-align: left;
+
+            @include media-breakpoint-down(lg) {
+              font-size: 2rem;
+            }
+
+            @include media-breakpoint-down(md) {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+
+    }
+
+    .carousel-indicators {
+      button {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+
+#index-news {
+  margin-bottom: 50px;
+  margin-top: 50px;
+
+  .card-img-wrapper {
+    span {
+      bottom: 0;
+      background: $body-bg;
+    }
+  }
+  .span-link {
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: $sibgu-gray;
+
+    &.active {
+      color: $sibgu-dark;
+    }
+  }
+}
