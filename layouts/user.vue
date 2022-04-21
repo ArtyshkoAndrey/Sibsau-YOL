@@ -6,6 +6,7 @@
         <Nuxt />
       </transition>
     </div>
+    <UserFooter />
   </div>
 </template>
 
